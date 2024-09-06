@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: inter;
+  src: url("./assets/fonts/Inter-VariableFont_slnt_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: caveat;
+  src: url("./assets/fonts/Caveat-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: caveat-brush;
+  src: url("./assets/fonts/CaveatBrush-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: shantell-sans;
+  src: url("./assets/fonts/ShantellSans-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: source-sans-3;
+  src: url("./assets/fonts/SourceSans3-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: above-the-sky-script;
+  src: url("./assets/fonts/Above-The-Sky-Script.otf") format("opentype");
+}
+@font-face {
+  font-family: caveat;
+  src: url("./assets/fonts/Caveat-VariableFont_wght.ttf") format("truetype");
+  vertical-align: middle !important;
+}
+html,
+input,
+textarea,
+select,
+button {
+  font-family: inter, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  accent-color: black;
+  user-select: none;
+}
+
+body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f6efee;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+img {
+  pointer-events: none;
+}
+
+.bg-gradient-1 {
+  background-attachment: scroll;
+  background-color: white;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(30deg, #f3f4f6 50%, #d1d5db 51%);
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+}
+
+.bg-image-1 {
+  background-attachment: fixed;
+  background-color: white;
+  background-image: url("/images/spectrum-flashes-coloured-light.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.frame-1 {
+  position: relative;
+}
+.frame-1 > img {
+  border: 20px solid;
+  border-bottom: 30px solid;
+  border-left-color: #3f3f46;
+  border-top-color: #27272a;
+  border-right-color: #18181b;
+  border-bottom-color: #09090b;
+  box-shadow: 3px 6px 6px 6px hsla(0deg, 0%, 0%, 0.25);
+}
+.frame-1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 10px;
+  background-color: transparent;
+  background-image: url("/vectors/brand-logo-2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
